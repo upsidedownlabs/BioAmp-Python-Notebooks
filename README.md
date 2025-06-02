@@ -1,71 +1,74 @@
 # BioAmp-Python-Notebooks
 
-**BioAmp-Python-Notebooks** is a curated collection of beginner-friendly Python notebooks designed to help users understand and work with bio-potential signals using hardware like BioAmp boards and analysis tools such as NeuroKit2.
+**BioAmp-Python-Notebooks** is an open-source collection of Python notebooks for biosignal processing, designed to make bio-potential signal analysis accessible to everyone. Whether you're working with BioAmp hardware or other acquisition systems, these notebooks provide complete workflows for processing and analyzing physiological signals.
 
-Currently, this repository features a complete **ECG (Electrocardiogram) Signal Processing and Analysis Notebook**, ideal for students, researchers, and hobbyists who want to learn the step-by-step workflow of acquiring, processing, and analyzing ECG data in real-time.
+## Featured Notebooks
 
-## 📌 Features of the ECG Notebook
+- **ECG Signal Processing**: Complete pipeline for electrocardiogram analysis from acquisition to feature extraction
+- **EMG Signal Processing**: End-to-end electromyography processing for muscle activity analysis
 
-This notebook is structured to guide you through every stage of ECG signal analysis:
+Perfect for:
+- **Students** learning bio-potential signal processing
+- **Researchers** needing reproducible analysis pipelines
+- **Developers** building health-tech applications
+- **Hobbyists** exploring physiological computing
 
-### 1. **Library Imports**
+## 📌 Features of the Notebooks
 
-Start by importing all necessary Python libraries such as `numpy`, `matplotlib`, `scipy`, `pandas`, and `neurokit2`.
+### ECG Notebook
+This notebook guides you through every stage of ECG signal analysis:
+1. **Library Imports** - All necessary Python libraries
+2. **Initialize Chords_USB Client** - Connect to BioAmp boards
+3. **Real-time ECG Data Acquisition** - Collect data with live plotting
+4. **Signal Processing** - Notch and low-pass filtering
+5. **ECG Analysis Pipeline** using NeuroKit2:
+   - PQRST Complex Analysis
+   - ECG Beat Morphology
+6. **Data Export** - Save processed signals to CSV
+7. **Stop Streaming** - Terminate acquisition safely
 
-### 2. **Initialize Chords_USB Client**
-
-This cell checks for connected compatible hardware, initializes the client, and starts real-time data streaming from the ECG hardware.
-
-### 3. **Real-time ECG Data Acquisition**
-
-Collect ECG data in real-time. This cell sets up a live plot window that updates continuously as data is received for a specified time duration.
-
-### 4. **Signal Processing**
-
-Apply a **notch filter** (to remove powerline interference) and a **low-pass filter** to clean the raw ECG signal. The processed signals are then saved to a CSV file for further analysis. Visualizations are also provided for comparison.
-
-### 5. **ECG Analysis Pipeline using NeuroKit2**
-
-Use the `neurokit2` library to extract meaningful features from the ECG signal, including:
-
-* **PQRST Complex Analysis**: Detect and label P, QRS, and T waves.
-* **ECG Beat Morphology**: Align beats to R-peaks, visualize individual beats, and compute an average beat morphology.
-
-### 6. **Stop Streaming**
-
-Send a STOP command to terminate the data acquisition process safely.
+### EMG Notebook
+This notebook provides comprehensive EMG signal processing:
+1. **Real-time EMG Acquisition** - Live plotting of muscle activity
+2. **Initialize Chords_USB Client** - Connect to BioAmp boards
+3. **Real-time EMG Data Acquisition** - Collect data with live plotting
+4. **Signal Processing**:
+   - 50Hz notch filter for powerline noise removal
+   - 70Hz high-pass filter for EMG signal isolation
+5. **Visualization**:
+   - Raw vs filtered signal comparison
+   - Muscle activation envelope
+6. **EMG Strength Meter** - Real-time muscle activation level display
+7. **Data Export** - Save processed signals to CSV
+8. **Stop Streaming** - Terminate acquisition safely
 
 ## 🎯 Who Is This For?
 
-* 🧑‍🎓 **Students** looking for a hands-on introduction to bio-potential signal processing.
-* 🧪 **Researchers** interested in analyzing ECG data using Python.
-* 💡 **Developers** building health-related apps or tools.
-* ❤️ **Hobbyists** experimenting with bio-potential signals and DIY health tech.
+* 🧑‍🎓 **Students** looking for hands-on biosignal processing
+* 🧪 **Researchers** analyzing physiological data
+* 💡 **Developers** building health-related applications
+* ❤️ **Hobbyists** experimenting with bio-potential signals
 
 ## 🚀 Getting Started
 
 1. **Clone this repository**
-
 ```bash
 git clone https://github.com/upsidedownlabs/BioAmp-Python-Notebooks.git
 ```
 
 2. **Install required packages**
-
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Run the ECG Notebook**
-
-   * Open the `.ipynb` file in Jupyter Notebook or JupyterLab.
-   * Follow each cell in sequence.
+3. **Run the Notebooks**
+   - Open the `.ipynb` file in Jupyter Notebook/Lab
+   - Follow each cell in sequence
 
 ## 📌 Upcoming Notebooks
 
 The repo will gradually include:
 
-* EMG (Electromyography) Signal Analysis
 * EEG (Electroencephalogram) Feature Extraction
 * EOG (Electrooculogram) Blink Detection
 
