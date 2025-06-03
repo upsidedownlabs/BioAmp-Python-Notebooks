@@ -44,10 +44,10 @@ This notebook provides comprehensive EMG signal processing:
 
 ## 🎯 Who Is This For?
 
-* 🧑‍🎓 **Students** looking for hands-on biosignal processing
-* 🧪 **Researchers** analyzing physiological data
-* 💡 **Developers** building health-related applications
-* ❤️ **Hobbyists** experimenting with bio-potential signals
+- 🧑‍🎓 **Students** looking for hands-on biosignal processing
+- 🧪 **Researchers** analyzing physiological data
+- 💡 **Developers** building health-related applications
+- ❤️ **Hobbyists** experimenting with bio-potential signals
 
 ## 🚀 Getting Started
 
