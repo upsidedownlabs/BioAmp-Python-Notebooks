@@ -29,7 +29,7 @@ This notebook guides you through every stage of ECG signal analysis:
 
 ### EMG Notebook
 This notebook provides comprehensive EMG signal processing:
-1. **Real-time EMG Acquisition** - Live plotting of muscle activity
+1. **Library Imports** - All necessary Python libraries
 2. **Initialize Chords_USB Client** - Connect to BioAmp boards
 3. **Real-time EMG Data Acquisition** - Collect data with live plotting
 4. **Signal Processing**:
