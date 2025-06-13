@@ -2,7 +2,6 @@ import serial
 import time
 import numpy as np
 import serial.tools.list_ports
-import sys
 import signal
 import threading
 
@@ -126,8 +125,8 @@ class Chords_USB:
             self.cleanup()
 
     def start_streaming(self):
-        self.send_command('START')
         self.streaming_active = True
+        self.send_command('START')
         try:
             while self.streaming_active:
                 self.read_data()
